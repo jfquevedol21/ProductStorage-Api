@@ -32,7 +32,7 @@ namespace ProductStorage.Controllers
             return productDTO;
         }
 
-        [HttpPost]
+        [HttpPost("create-product")]
         public ActionResult CreateProduct([FromBody] CreateOrUpdateProductDTO product)
         {
             var _product = new Product();
